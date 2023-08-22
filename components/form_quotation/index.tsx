@@ -228,7 +228,7 @@ export default function Form() {
               className={styles.glow_on_hover}
               endIcon={<SendIcon />}
               type="submit"
-              sx={{ mt: 1 }}
+              sx={{ mt: 1, color: "white" }}
             >
               <Typography variant="h5">ส่งข้อความถึงเรา</Typography>
             </Button>

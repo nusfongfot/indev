@@ -407,7 +407,7 @@ export default function ContacUs() {
                     <Stack flexDirection={"row"} justifyContent={"center"}>
                       <Button
                         className={styles.glow_on_hover}
-                        sx={{ mt: 2 }}
+                        sx={{ mt: 2, color: "white" }}
                         type="submit"
                       >
                         ส่งข้อมูล

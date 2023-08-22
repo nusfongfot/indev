@@ -209,33 +209,33 @@ a {
 }
 
 .sub_logo {
-  margin-top: 1rem;
+  margin-top: 1rem !important;
 
   @media (max-width: 376px) {
-    margin-top: 4rem;
+    margin-top: 4rem !important;
   }
 
   @media (min-width: 390px) {
-    margin-top: 12.5rem;
+    margin-top: 12.5rem !important;
   }
 
   @media (min-width: 768px) {
-    margin-top: 19rem;
+    margin-top: 19rem !important;
   }
 
   @media (min-width: 820px) {
-    margin-top: 26rem;
+    margin-top: 26rem !important;
   }
 
   @media (min-width: 1024px) {
-    margin-top: 29rem;
+    margin-top: 29rem !important;
   }
 
   @media (min-width: 1280px) {
-    margin-top: 5.5rem;
+    margin-top: 5.5rem !important;
   }
   @media (min-width: 1576px) {
-    margin-top: 9rem;
+    margin-top: 9rem !important;
   }
 }
 
