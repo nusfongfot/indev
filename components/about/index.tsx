@@ -24,9 +24,9 @@ export default function About() {
           <Typography
             variant="h5"
             fontWeight={900}
-            // data-aos="zoom-in"
-            // data-aos-duration="1700"
-            // data-aos-once="true"
+            data-aos="zoom-in"
+            data-aos-duration="1700"
+            data-aos-once="true"
           >
             Why D.I.D serve your dreams?
           </Typography>
