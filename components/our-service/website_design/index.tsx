@@ -67,7 +67,7 @@ export default function WebSiteDeSign() {
           </Grid>
         </Grid>
 
-        <Grid container mt={3} spacing={3}>
+        {/* <Grid container mt={3} spacing={3}>
           <Grid item xs={12} md={12}>
             <Box
               sx={{
@@ -80,7 +80,8 @@ export default function WebSiteDeSign() {
               <Typography>Templete</Typography>
             </Box>
           </Grid>
-        </Grid>
+        </Grid> */}
+        <Box height={234} />
       </Container>
     </Box>
   );

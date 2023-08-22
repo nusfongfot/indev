@@ -410,7 +410,7 @@ export default function ContacUs() {
                         sx={{ mt: 2, color: "white" }}
                         type="submit"
                       >
-                        ส่งข้อมูล
+                        <Typography variant="h5">ส่งข้อมูล</Typography>
                       </Button>
                     </Stack>
                   </Grid>

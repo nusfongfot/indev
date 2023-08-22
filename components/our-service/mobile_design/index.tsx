@@ -64,7 +64,7 @@ export default function MobileDesign() {
             </Stack>
           </Grid>
         </Grid>
-        <Grid container mt={3} spacing={3}>
+        {/* <Grid container mt={3} spacing={3}>
           <Grid item xs={12} md={12}>
             <Box
               sx={{
@@ -78,8 +78,9 @@ export default function MobileDesign() {
               <h1></h1>
             </Box>
           </Grid>
-        </Grid>
+        </Grid> */}
       </Container>
+      <Box height={194} />
     </Box>
   );
 }

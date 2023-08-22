@@ -52,14 +52,14 @@ export default function SwiperContent({ data, isImg1 }: Props) {
         {data.map((item, i) => (
           <SwiperSlide style={{ height: !isImg1 ? "600px" : "300px" }} key={i}>
             {isImg1 ? (
-              <>
+              <Link href={'/ourservice'}>
                 <img
                   alt="img"
                   src={item.img}
                   style={{ width: "100%", height: "250px", objectFit: "cover" }}
                 />
                 <Typography variant="h6">{item.title}</Typography>
-              </>
+              </Link>
             ) : (
               <Link href={item.link}>
                 <img

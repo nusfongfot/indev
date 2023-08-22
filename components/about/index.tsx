@@ -20,38 +20,40 @@ export default function About() {
           เกี่ยวกับเรา DEV IN DREAM
         </Typography>
 
-        <Typography
-          variant="h5"
-          fontWeight={900}
-          data-aos="zoom-in"
-          data-aos-duration="1700"
-          data-aos-once="true"
-        >
-          Why D.I.D serve your dreams?
-        </Typography>
-        <Typography
-          variant="h5"
-          data-aos="zoom-in"
-          data-aos-duration="1700"
-          data-aos-once="true"
-        >
-          Dreams, everyone can dream but how many people can make it real!
-          <br />
-          We are one of that people who can make the dream even big or small
-          become to reality.
-        </Typography>
+        <Box sx={{ ml: 8 }}>
+          <Typography
+            variant="h5"
+            fontWeight={900}
+            // data-aos="zoom-in"
+            // data-aos-duration="1700"
+            // data-aos-once="true"
+          >
+            Why D.I.D serve your dreams?
+          </Typography>
+          <Typography
+            variant="h5"
+            data-aos="zoom-in"
+            data-aos-duration="1700"
+            data-aos-once="true"
+          >
+            Dreams, everyone can dream but how many people can make it real!
+            <br />
+            We are one of that people who can make the dream even big or small
+            become to reality.
+          </Typography>
 
-        <Typography
-          variant="h5"
-          mt={3}
-          data-aos="zoom-in"
-          data-aos-duration="1700"
-          data-aos-once="true"
-        >
-          Dev In Dream ธุรกิจที่คุณมีความฝัน สามารถเป็นจริงได้ ร่วมลงมือไปกับเรา
-          ให้ความเชื่อ และฝันของคุณเป็นจริง <br /> ต่อยอด
-          ธุรกิจของคุณให้ประสบความสำเร็จไปด้วยกัน
-        </Typography>
+          <Typography
+            variant="h5"
+            mt={3}
+            data-aos="zoom-in"
+            data-aos-duration="1700"
+            data-aos-once="true"
+          >
+            Dev In Dream ธุรกิจที่คุณมีความฝัน สามารถเป็นจริงได้
+            ร่วมลงมือไปกับเรา ให้ความเชื่อ และฝันของคุณเป็นจริง <br /> ต่อยอด
+            ธุรกิจของคุณให้ประสบความสำเร็จไปด้วยกัน
+          </Typography>
+        </Box>
 
         <Box mt={10} />
 

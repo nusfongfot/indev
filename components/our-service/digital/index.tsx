@@ -76,7 +76,7 @@ export default function Digital() {
                 sx={{
                   background: "rgba(11, 7, 22, 0.6)",
                   width: { xs: "380px", md: "400px" },
-                  height: { xs: "480px", sm: "510px", lg: "480px" },
+                  height: "100%",
                   p: 2,
                   borderRadius: "1rem",
                 }}
@@ -141,7 +141,7 @@ export default function Digital() {
                 sx={{
                   background: "rgba(11, 7, 22, 0.6)",
                   width: { xs: "380px", md: "400px" },
-                  height: "480px",
+                  height: "100%",
                   p: 2,
                   borderRadius: "1rem",
                 }}
@@ -180,7 +180,7 @@ export default function Digital() {
                 sx={{
                   background: "rgba(11, 7, 22, 0.6)",
                   width: { xs: "380px", md: "400px" },
-                  height: { xs: "480px", sm: "510px", lg: "480px" },
+                  height: "100%",
                   p: 2,
                   borderRadius: "1rem",
                 }}
