@@ -1,0 +1,10 @@
+.demo_1 {
+  position: relative;
+}
+
+.demo_2 {
+  @media (min-width: 1536px) {
+    position: absolute;
+    top: -160px;
+  }
+}
