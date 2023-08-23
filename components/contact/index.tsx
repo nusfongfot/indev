@@ -234,6 +234,7 @@ export default function ContacUs() {
                             background: "rgba(255,255,255,0.2)",
                             borderRadius: "0.5rem",
                           }}
+                          inputProps={{ style: { color: "white" } }}
                           required
                           value={values.firstName}
                           onChange={(e: ChangeEvent<HTMLInputElement>) =>
@@ -265,6 +266,7 @@ export default function ContacUs() {
                             background: "rgba(255,255,255,0.2)",
                             borderRadius: "0.5rem",
                           }}
+                          inputProps={{ style: { color: "white" } }}
                           required
                           value={values.lasName}
                           onChange={(e: ChangeEvent<HTMLInputElement>) =>
@@ -295,6 +297,7 @@ export default function ContacUs() {
                           background: "rgba(255,255,255,0.2)",
                           borderRadius: "0.5rem",
                         }}
+                        inputProps={{ style: { color: "white" } }}
                         required
                         type="email"
                         value={values.email}
@@ -336,6 +339,7 @@ export default function ContacUs() {
                             background: "rgba(255,255,255,0.2)",
                             borderRadius: "0.5rem",
                           }}
+                          inputProps={{ style: { color: "white" } }}
                           required
                           type="number"
                           value={values.phone}
@@ -369,6 +373,7 @@ export default function ContacUs() {
                             background: "rgba(255,255,255,0.2)",
                             borderRadius: "0.5rem",
                           }}
+                          inputProps={{ style: { color: "white" } }}
                           value={values.line}
                           onChange={(e: ChangeEvent<HTMLInputElement>) =>
                             handleOnChangeValues(e)
@@ -398,6 +403,7 @@ export default function ContacUs() {
                           background: "rgba(255, 255, 255, 0.2)",
                           borderRadius: "0.5rem",
                         }}
+                        inputProps={{ style: { color: "white" } }}
                         multiline
                         maxRows={3}
                         required
@@ -447,6 +453,3 @@ export default function ContacUs() {
     </Box>
   );
 }
-
-
-

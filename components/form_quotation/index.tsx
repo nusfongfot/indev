@@ -96,6 +96,9 @@ export default function Form() {
                 sx={{
                   background: "rgba(255,255,255,0.2)",
                   borderRadius: "0.5rem",
+                  input: {
+                    color: "white",
+                  },
                 }}
                 required
                 value={values.firstName}
@@ -121,6 +124,9 @@ export default function Form() {
                 sx={{
                   background: "rgba(255,255,255,0.2)",
                   borderRadius: "0.5rem",
+                  input: {
+                    color: "white",
+                  },
                 }}
                 required
                 value={values.lasName}
@@ -148,6 +154,9 @@ export default function Form() {
               sx={{
                 background: "rgba(255,255,255,0.2)",
                 borderRadius: "0.5rem",
+                input: {
+                  color: "white",
+                },
               }}
               required
               type="number"
@@ -175,6 +184,9 @@ export default function Form() {
               sx={{
                 background: "rgba(255,255,255,0.2)",
                 borderRadius: "0.5rem",
+                input: {
+                  color: "white",
+                },
               }}
               required
               type="email"
@@ -203,6 +215,7 @@ export default function Form() {
                 background: "rgba(255, 255, 255, 0.2)",
                 borderRadius: "0.5rem",
               }}
+              inputProps={{ style: { color: "white" } }}
               required
               multiline
               maxRows={3}
