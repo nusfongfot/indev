@@ -19,7 +19,7 @@ export default function About() {
             textShadow: `2px 2px 8px #9b06b9`,
           }}
         >
-          {`${t("about_us")} DEV IN DREAM`}
+          {t("about_us") + " DEV IN DREAM"}
         </Typography>
 
         <Box sx={{ ml: 8 }}>

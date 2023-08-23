@@ -94,14 +94,18 @@ function ResponsiveAppBar() {
 
   React.useEffect(() => {
     const getFlag: any = window.localStorage.getItem("selectedLang");
+    console.log("getFlag", getFlag);
     if (getFlag == "th") {
       setFlag("../img/thIcon.webp");
+      i18n.changeLanguage(getFlag);
+      return;
     } else if (getFlag == "en") {
       setFlag("../img/enIcon.png");
+      i18n.changeLanguage(getFlag);
+      return;
     } else {
       setFlag("../img/thIcon.webp");
     }
-    i18n.changeLanguage(getFlag);
   }, []);
 
   return (
