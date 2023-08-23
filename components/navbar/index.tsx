@@ -96,8 +96,10 @@ function ResponsiveAppBar() {
     const getFlag: any = window.localStorage.getItem("selectedLang");
     if (getFlag == "th") {
       setFlag("../img/thIcon.webp");
-    } else {
+    } else if (getFlag == "en") {
       setFlag("../img/enIcon.png");
+    } else {
+      setFlag("../img/thIcon.webp");
     }
     i18n.changeLanguage(getFlag);
   }, []);
