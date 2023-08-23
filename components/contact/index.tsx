@@ -12,6 +12,8 @@ import Map from "../map";
 import { ChangeEvent, FormEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./styles.module.scss";
+import Swal from "sweetalert2";
+import { useTranslation } from "react-i18next";
 
 const data = [
   { title: "บริษัท อินเดฟ แอดไวเซอรี่ จำกัด(สำนักงานใหญ่)" },
@@ -23,6 +25,8 @@ const data = [
 ];
 
 export default function ContacUs() {
+  const { t } = useTranslation();
+
   const [values, setValues] = useState({
     firstName: "",
     lasName: "",
@@ -52,7 +56,7 @@ export default function ContacUs() {
       .then(
         (result) => {
           if (result.status == 200 && result.text == "OK") {
-            alert("Thank you for your information");
+            Swal.fire("ขอบคุณสำหรับข้อมูล", "", "success");
           }
         },
         (error) => {
@@ -81,7 +85,7 @@ export default function ContacUs() {
             textShadow: `2px 2px 8px #9b06b9`,
           }}
         >
-          ติดต่อเรา
+          {t("contact")}
         </Typography>
 
         <Grid container>
@@ -442,3 +446,6 @@ export default function ContacUs() {
     </Box>
   );
 }
+
+
+

@@ -11,6 +11,7 @@ import SendIcon from "@mui/icons-material/Send";
 import { ChangeEvent, FormEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./styles.module.scss";
+import Swal from "sweetalert2";
 
 export default function Form() {
   const [values, setValues] = useState({
@@ -42,7 +43,7 @@ export default function Form() {
       .then(
         (result) => {
           if (result.status == 200 && result.text == "OK") {
-            alert("Thank you for your information");
+            Swal.fire("ขอบคุณสำหรับข้อมูล", "", "success");
           }
         },
         (error) => {

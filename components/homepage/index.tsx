@@ -2,9 +2,16 @@ import { Box, Container, Stack, Typography } from "@mui/material";
 import Form from "../form_quotation";
 import Header from "../header";
 import SwiperContent from "../service-ui/swiper";
-import { swiper1 } from "@/data/swiper";
+import { useTranslation } from "react-i18next";
 
 export default function HomeComponents() {
+  const { t } = useTranslation();
+
+  const swiper1 = [
+    { img: "../img/s2.jpg", title: t("application"), link: "" },
+    { img: "../img/s1.jpg", title: t("website"), link: "" },
+    { img: "../img/s3.jpg", title: t("server"), link: "" },
+  ];
   return (
     <>
       <Box className="bg">

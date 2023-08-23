@@ -1,8 +1,10 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import CustomizedTimeline from "../timeline";
 import styles from "./styles.module.scss";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation();
   return (
     <Box className="bg_image">
       <Container maxWidth="xl" sx={{ mt: { md: 8, xs: 7 }, pt: 8 }}>
@@ -17,7 +19,7 @@ export default function About() {
             textShadow: `2px 2px 8px #9b06b9`,
           }}
         >
-          เกี่ยวกับเรา DEV IN DREAM
+          {`${t("about_us")} DEV IN DREAM`}
         </Typography>
 
         <Box sx={{ ml: 8 }}>

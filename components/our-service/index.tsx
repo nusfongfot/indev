@@ -2,27 +2,28 @@ import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 import SwiperContent from "../service-ui/swiper";
 import { swiper2 } from "@/data/swiper";
 import Link from "next/link";
-import styles from './styles.module.scss'
-
-const data = [
-  {
-    title: "Website Design Development",
-    img: "../img/s4.png",
-    link: "/ourservice?subpath=website_design",
-  },
-  {
-    title: "Mobile Application Design Development",
-    img: "../img/s6.jpg",
-    link: "/ourservice?subpath=mobile_design",
-  },
-  {
-    title: "Server Development Management",
-    img: "../img/s5.png",
-    link: "/ourservice?subpath=server",
-  },
-];
+import styles from "./styles.module.scss";
+import { useTranslation } from "react-i18next";
 
 export default function OurSerVice() {
+  const { t } = useTranslation();
+  const data = [
+    {
+      title: t("wdd"),
+      img: "../img/s4.png",
+      link: "/ourservice?subpath=website_design",
+    },
+    {
+      title: t("mad"),
+      img: "../img/s6.jpg",
+      link: "/ourservice?subpath=mobile_design",
+    },
+    {
+      title: t("sdm"),
+      img: "../img/s5.png",
+      link: "/ourservice?subpath=server",
+    },
+  ];
   return (
     <Box className="bg_image">
       <Container maxWidth="xl" sx={{ mt: { md: 8, xs: 7 }, pt: 8 }}>
@@ -35,7 +36,7 @@ export default function OurSerVice() {
             textShadow: `2px 2px 8px #9b06b9`,
           }}
         >
-          บริการของเรา
+          {t("our_service")}
         </Typography>
         <Grid container data-aos="zoom-in" data-aos-once="true">
           {data.map((item, i) => (

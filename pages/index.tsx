@@ -1,3 +1,4 @@
+"use client"
 import HomeComponents from "@/components/homepage";
 import Head from "next/head";
 

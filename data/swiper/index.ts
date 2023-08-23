@@ -1,8 +1,3 @@
-export const swiper1 = [
-  { img: "../img/s2.jpg", title: "Application", link: "" },
-  { img: "../img/s1.jpg", title: "WEBSITE", link: "" },
-  { img: "../img/s3.jpg", title: "SERVER", link: "" },
-];
 export const swiper2 = [
   {
     img: "../img/w1.jpg",
