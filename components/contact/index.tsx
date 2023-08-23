@@ -84,6 +84,7 @@ export default function ContacUs() {
           sx={{
             textShadow: `2px 2px 8px #9b06b9`,
           }}
+          fontWeight={900}
         >
           {t("contact")}
         </Typography>

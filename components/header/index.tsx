@@ -10,7 +10,7 @@ export default function Header() {
         data-aos-duration="1000"
         data-aos-once="true"
         sx={{
-          textShadow: `2px 2px 8px #da05ff`,
+          // textShadow: `2px 2px 8px #da05ff`,
         }}
         variant="h2"
         className="title1"
@@ -26,7 +26,7 @@ export default function Header() {
         sx={{
           // typography: { lg: "h3", xl: "h2" },
 
-          textShadow: `2px 2px 8px #da05ff`,
+          // textShadow: `2px 2px 8px #da05ff`,
         }}
         className="title1"
       >
@@ -41,7 +41,7 @@ export default function Header() {
         sx={{
           // typography: { lg: "h3", xl: "h2" },
 
-          textShadow: `2px 2px 8px #da05ff`,
+          // textShadow: `2px 2px 8px #da05ff`,
         }}
         className="title1"
       >
@@ -56,7 +56,7 @@ export default function Header() {
         sx={{
           // typography: { lg: "h3", xl: "h2" },
 
-          textShadow: `2px 2px 8px #da05ff`,
+          // textShadow: `2px 2px 8px #da05ff`,
         }}
         // variant="h2"
         className="title1"
