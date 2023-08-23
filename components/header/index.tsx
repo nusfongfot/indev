@@ -93,7 +93,8 @@ export default function Header() {
         <Typography
           className="title4 sub_logo"
           sx={{
-            color: "#1b1145",
+            // color: "#1b1145",
+            color: "#ffffff",
             fontWeight: 900,
             // mt: { xs: 8, sm: 26, xl: 19, lg: 12 },
             textShadow: `2px 2px 8px #f560bc`,
