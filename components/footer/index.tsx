@@ -8,6 +8,7 @@ import {
   Link,
 } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 const icons = [
   {
@@ -35,7 +36,7 @@ export default function Footer() {
             flexDirection={"row"}
             alignItems={"center"}
             justifyContent={"space-between"}
-            sx={{ height: 200 }}
+            height={"100%"}
           >
             <Box />
             <Stack
@@ -84,6 +85,7 @@ export default function Footer() {
             flexDirection={"row"}
             alignItems={"center"}
             justifyContent={"space-between"}
+            height={"100%"}
           >
             <Box />
             <Stack
@@ -94,7 +96,11 @@ export default function Footer() {
               <Typography className="title2 color_purple">
                 Contact Us
               </Typography>
-              <Typography mt={2}>065-454-2888</Typography>
+              <Stack flexDirection={"row"} alignItems={"center"} mt={2} gap={1}>
+                <LocalPhoneIcon />
+                <Typography>065-454-2888</Typography>
+              </Stack>
+
               <Stack flexDirection={"row"} gap={1} mt={2}>
                 {icons.map((item, i) => (
                   <Link href={item.link} key={i} target="_blank">
@@ -106,7 +112,7 @@ export default function Footer() {
                 ))}
               </Stack>
 
-              <Typography mt={2}>Facebook,TikTok</Typography>
+              <Box mt={7} />
             </Stack>
 
             <Divider

@@ -14,14 +14,19 @@ import emailjs from "@emailjs/browser";
 import styles from "./styles.module.scss";
 import Swal from "sweetalert2";
 import { useTranslation } from "react-i18next";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import EmailIcon from "@mui/icons-material/Email";
 
 const data = [
   { title: "บริษัท อินเดฟ แอดไวเซอรี่ จำกัด(สำนักงานใหญ่)" },
   { title: "IN DEV ADVISORY CO.,LTD. (HEAD OFFICE)" },
   { title: "127 ถนนวิภาวดีรังสิต แขวงสามเสนใน เขตพญาไท" },
   { title: "กรุงเทพมหานคร 10400" },
-  { title: "065-454-2888" },
-  { title: "marketing@indevadvisory.com" },
+  { title: "065-454-2888", icon: <LocalPhoneIcon sx={{ fontSize: 22 }} /> },
+  {
+    title: "marketing@indevadvisory.com",
+    icon: <EmailIcon sx={{ fontSize: 22 }} />,
+  },
 ];
 
 export default function ContacUs() {
@@ -178,12 +183,17 @@ export default function ContacUs() {
                 alignItems={"center"}
               >
                 {data.map((item, i) => (
-                  <Typography key={i}>{item.title}</Typography>
+                  <Box key={i}>
+                    <Stack flexDirection={"row"}>
+                      <Box>{item.icon}</Box>
+                      <Typography>{item.title}</Typography>
+                    </Stack>
+                  </Box>
                 ))}
 
                 <img
                   src="../img/line.jpg"
-                  style={{ width: "auto", height: "100px" }}
+                  style={{ width: "auto", height: "130px" }}
                 />
               </Stack>
             </Grid>
