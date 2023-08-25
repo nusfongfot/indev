@@ -9,7 +9,16 @@ import {
 } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
-const icons = [{}];
+const icons = [
+  {
+    img: "../img/fb.jpg",
+    link: "https://www.facebook.com/profile.php?id=100095225520798",
+  },
+  {
+    img: "../img/tk.jpg",
+    link: "/#",
+  },
+];
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -85,18 +94,15 @@ export default function Footer() {
               <Typography className="title2 color_purple">
                 Contact Us
               </Typography>
-              <Typography mt={2}>055-555-5555</Typography>
+              <Typography mt={2}>065-454-2888</Typography>
               <Stack flexDirection={"row"} gap={1} mt={2}>
-                {[1, 2].map((item, i) => (
-                  <Box
-                    sx={{
-                      backgroundColor: "white",
-                      borderRadius: "50%",
-                      width: "30px",
-                      height: "30px",
-                    }}
-                    key={i}
-                  />
+                {icons.map((item, i) => (
+                  <Link href={item.link} key={i} target="_blank">
+                    <img
+                      src={item.img}
+                      style={{ width: 30, height: 30, borderRadius: "50%" }}
+                    />
+                  </Link>
                 ))}
               </Stack>
 

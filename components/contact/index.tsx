@@ -20,7 +20,7 @@ const data = [
   { title: "IN DEV ADVISORY CO.,LTD. (HEAD OFFICE)" },
   { title: "127 ถนนวิภาวดีรังสิต แขวงสามเสนใน เขตพญาไท" },
   { title: "กรุงเทพมหานคร 10400" },
-  { title: "055-555-5555" },
+  { title: "065-454-2888" },
   { title: "marketing@indevadvisory.com" },
 ];
 
