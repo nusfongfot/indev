@@ -56,11 +56,11 @@ export default function ContacUs() {
       .then(
         (result) => {
           if (result.status == 200 && result.text == "OK") {
-            Swal.fire("ขอบคุณสำหรับข้อมูล", "", "success");
+            Swal.fire(t("thk"), "", "success");
           }
         },
         (error) => {
-          console.log("error", error);
+          alert(error);
         }
       );
   };

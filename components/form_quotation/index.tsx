@@ -12,8 +12,10 @@ import { ChangeEvent, FormEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./styles.module.scss";
 import Swal from "sweetalert2";
+import { useTranslation } from "react-i18next";
 
 export default function Form() {
+  const { t } = useTranslation();
   const [values, setValues] = useState({
     firstName: "",
     lasName: "",
@@ -43,11 +45,11 @@ export default function Form() {
       .then(
         (result) => {
           if (result.status == 200 && result.text == "OK") {
-            Swal.fire("ขอบคุณสำหรับข้อมูล", "", "success");
+            Swal.fire(t("thk"), "", "success");
           }
         },
         (error) => {
-          console.log("error", error);
+          alert(error);
         }
       );
   };

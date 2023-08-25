@@ -86,4 +86,5 @@ export default {
     "Develop software design, website applications, and marketing to support your business. You can choose whatever type of marketing you want. The functionality is recommended every step of the way to make your business's marketing dream come true.",
   digital_hover:
     "Develop functionality with new and modern features to suit your needs, market differentiation, and give every package a unique functionality. Whether it's the effects of new language programs in the modern world, attractive to the eye!!",
+  thk: "Thank you for your information.",
 };
