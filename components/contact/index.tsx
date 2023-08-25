@@ -182,8 +182,8 @@ export default function ContacUs() {
                 ))}
 
                 <img
-                  src="https://www.qrcode-monkey.com/img/default-preview-qr.svg"
-                  style={{ width: "100%", height: "100px" }}
+                  src="../img/line.jpg"
+                  style={{ width: "auto", height: "100px" }}
                 />
               </Stack>
             </Grid>

@@ -16,7 +16,7 @@ const icons = [
   },
   {
     img: "../img/tk.jpg",
-    link: "/#",
+    link: "https://www.tiktok.com/@dev.in.dream?lang=th-TH",
   },
 ];
 

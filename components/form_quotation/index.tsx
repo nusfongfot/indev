@@ -238,7 +238,7 @@ export default function Form() {
           >
             <img
               style={{ width: "auto", height: "140px", background: "white" }}
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png"
+              src="../img/line.jpg"
             />
             <Button
               className={styles.glow_on_hover}
