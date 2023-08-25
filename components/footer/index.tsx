@@ -7,16 +7,17 @@ import {
   Typography,
   Link,
 } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 const icons = [{}];
 
-const ourService = [
-  { title: "บริการของเรา", link: "/ourservice" },
-  { title: "เกี่ยวกับเรา", link: "/about" },
-  { title: "ติดต่อเรา", link: "/contact" },
-];
-
 export default function Footer() {
+  const { t } = useTranslation();
+  const ourService = [
+    { title: t("our_service"), link: "/ourservice" },
+    { title: t("about_us"), link: "/about" },
+    { title: t("contact"), link: "/contact" },
+  ];
   return (
     <Box p={2} className="footer">
       <Grid container>

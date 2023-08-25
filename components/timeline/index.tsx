@@ -7,8 +7,10 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import Typography from "@mui/material/Typography";
 import { Box, Stack, useMediaQuery, useTheme } from "@mui/material";
 import styles from "./styles.module.scss";
+import { useTranslation } from "react-i18next";
 
 export default function CustomizedTimeline() {
+  const { t } = useTranslation();
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
   return (
@@ -41,9 +43,9 @@ export default function CustomizedTimeline() {
             Design
           </Typography>
           <Typography variant="h6" className={styles.hide}>
-            การวางแผนการทํางาน ที่มีทั้งการตั้งหัวข้อ
+            {t("respond_to_1")}
             <br />
-            ทราบถึงความต้องการของผู้ใช้งาน กําหนดระยะเวลา
+            {t("respond_to_2")}
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -68,8 +70,11 @@ export default function CustomizedTimeline() {
             Development
           </Typography>
           <Typography variant="h6" className={styles.hide}>
-            ออกแบบงาน ให้ตอบโจทย์ผู้ใช้งาน <br />
-            ให้งานออกมามีคุณภาพโดยทีมผู้พัฒนาจาก Dev In Dream
+            {/* ออกแบบงาน ให้ตอบโจทย์ผู้ใช้งาน <br />
+            ให้งานออกมามีคุณภาพโดยทีมผู้พัฒนาจาก Dev In Dream */}
+            {t("develop_to_1")}
+            <br />
+            {t("develop_to_2")}
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -101,8 +106,11 @@ export default function CustomizedTimeline() {
             Server Creation
           </Typography>
           <Typography variant="h6" className={styles.hide}>
-            สร้างงานผ่านเซิร์ฟเวอร์ของโปรแกรมด้วย <br />
-            ภาษา HTML หรือ เครื่องมือที่ พัฒนาระบบ ให้มีประสิทธิภาพ
+            {/* สร้างงานผ่านเซิร์ฟเวอร์ของโปรแกรมด้วย <br />
+            ภาษา HTML หรือ เครื่องมือที่ พัฒนาระบบ ให้มีประสิทธิภาพ */}
+            {t("create_task_1")}
+            <br />
+            {t("create_task_2")}
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -129,11 +137,14 @@ export default function CustomizedTimeline() {
             component="span"
             fontWeight={900}
           >
-            Test and Improve
+            Improve and Test
           </Typography>
           <Typography className={styles.hide} variant="h6">
-            ทดสอบผลงาน ปรับปรุงและฟังความคิดเห็น <br />
-            นํามาแก้ไขให้ตอบโจทย์กับที่ลูกค้า ต้องการ
+            {/* ทดสอบผลงาน ปรับปรุงและฟังความคิดเห็น <br />
+            นํามาแก้ไขให้ตอบโจทย์กับที่ลูกค้า ต้องการ */}
+            {t("welove_1")}
+            <br />
+            {t("welove_2")}
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -164,8 +175,11 @@ export default function CustomizedTimeline() {
             Continuous Development
           </Typography>
           <Typography className={styles.hide} variant="h6">
-            พัฒนาเซิร์ฟเวอร์อย่างต่อเนื่อง คอยแก้ไข <br />
-            อัพเดทระบบเซิร์ฟเวอร์ให้มี ประสิทธิภาพตามที่ลูกค้าต้องการและพึงพอใจ
+            {/* พัฒนาเซิร์ฟเวอร์อย่างต่อเนื่อง คอยแก้ไข <br />
+            อัพเดทระบบเซิร์ฟเวอร์ให้มี ประสิทธิภาพตามที่ลูกค้าต้องการและพึงพอใจ */}
+            {t("dev_in_1")}
+            <br />
+            {t("dev_in_2")}
           </Typography>
         </TimelineContent>
       </TimelineItem>

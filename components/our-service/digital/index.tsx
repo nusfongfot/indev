@@ -1,7 +1,9 @@
 import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+import { useTranslation } from "react-i18next";
 export default function Digital() {
+  const { t } = useTranslation();
   return (
     <Box className="bg_image">
       <Container maxWidth="xl" sx={{ mt: { md: 8, xs: 7 }, pt: 8 }}>
@@ -24,7 +26,7 @@ export default function Digital() {
                 src="../img/digital.jpg"
                 style={{
                   width: "330px",
-                  height: "480px",
+                  height: "100%",
                   borderRadius: "1rem",
                 }}
                 data-aos="fade-right"
@@ -82,16 +84,13 @@ export default function Digital() {
                 }}
               >
                 <Typography variant="h5" fontWeight={900} lineHeight={2}>
-                  คืออะไร
+                  {t("is_digital")}
                 </Typography>
                 <Typography variant="h6" lineHeight={2}>
-                  เป็นรูปแบบหนึ่งของการตลาดสินค้าหรือบริการที่ใช้เทคโนโลยีด้านดิจทัลทางอินเทอร์เน็ตท้ัง
-                  แอปพลิเคชันโทรศัพท์มือถือ การโฆษณาด้วยการแสดงข้อความจอภาพ
-                  และสื่อดิจิทัลอื่น ๆ การตลาดดิจิทัลเข้ามามีบทบาทมากขึ้น
-                  ทําให้ผู้คนหันมาสนใจทางด้าน การตลาดออนไลน์
-                  เพราะช่วยในเรื่องความสะดวกและยังมี digital platform หลากหลาย
-                  เรียกว่า การตลาด 5.0 (Omni Chanel) ทําให้การตลาดดิจิทัล
-                  เติบโตอย่างรวดเร็ว
+                  {t("is_digital_1")}
+                  <br />
+
+                  {t("is_digital_2")}
                 </Typography>
               </Stack>
               <Box
@@ -147,17 +146,18 @@ export default function Digital() {
                 }}
               >
                 <Typography variant="h5" fontWeight={900} lineHeight={2}>
-                  ทำอะไรได้บ้าง
+                  {t("how_it_work")}
                 </Typography>
                 <Typography variant="h6" lineHeight={2}>
-                  การทําโฆษณาออนไลน์ โดยสามารถทําได้ทั้งผ่านแพลตฟอร์มต่างๆ อย่าง
-                  Google Ads, Meta Ads, Linkedin Ads และอื่นๆ การทํา SEO
-                  ซึ่งจะช่วยให้เว็บไซต์ของคุณติดหน้าแรกของ Search Engine โดย
-                  Search Engine ที่ คนส่วนมากนิยมใช้คือ Google การทํา SEO
-                  ต้องมีทั้งการวิเคราะห์ข้อมูล Local SEO หรือ
-                  เป็นการทําให้หน้าร้านค้าออฟไลน์ของคุณ
-                  แสดงผลมากขึ้นเมื่อทําการค้นหาบนหน้า Search Engine
-                  หรือด้วยวิธีออนไลน์
+                  {t("is_digital_work_1")}
+                </Typography>
+
+                <Typography variant="h6" lineHeight={2} mt={1}>
+                  {t("is_digital_work_2")}
+                </Typography>
+
+                <Typography variant="h6" lineHeight={2} mt={1}>
+                  {t("is_digital_work_3")}
                 </Typography>
               </Stack>
             </Stack>
@@ -186,17 +186,18 @@ export default function Digital() {
                 }}
               >
                 <Typography variant="h5" fontWeight={900} lineHeight={2}>
-                  ทำอะไรได้บ้าง
+                  {t("how_it_work")}
                 </Typography>
                 <Typography variant="h6" lineHeight={2}>
-                  การทําโฆษณาออนไลน์ โดยสามารถทําได้ทั้งผ่านแพลตฟอร์มต่างๆ อย่าง
-                  Google Ads, Meta Ads, Linkedin Ads และอื่นๆ การทํา SEO
-                  ซึ่งจะช่วยให้เว็บไซต์ของคุณติดหน้าแรกของ Search Engine โดย
-                  Search Engine ที่ คนส่วนมากนิยมใช้คือ Google การทํา SEO
-                  ต้องมีทั้งการวิเคราะห์ข้อมูล Local SEO หรือ
-                  เป็นการทําให้หน้าร้านค้าออฟไลน์ของคุณ
-                  แสดงผลมากขึ้นเมื่อทําการค้นหาบนหน้า Search Engine
-                  หรือด้วยวิธีออนไลน์
+                  {t("is_digital_work_1")}
+                </Typography>
+
+                <Typography variant="h6" lineHeight={2} mt={1}>
+                  {t("is_digital_work_2")}
+                </Typography>
+
+                <Typography variant="h6" lineHeight={2} mt={1}>
+                  {t("is_digital_work_3")}
                 </Typography>
               </Stack>
             </Stack>

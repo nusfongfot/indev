@@ -62,7 +62,7 @@ function HoverImage() {
         flexDirection: "column",
       }}
     >
-      {data.map((value,i) => {
+      {data.map((value, i) => {
         return (
           <MenuItem
             sx={{

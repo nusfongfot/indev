@@ -1,6 +1,5 @@
 import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 import SwiperContent from "../service-ui/swiper";
-import { swiper2 } from "@/data/swiper";
 import Link from "next/link";
 import styles from "./styles.module.scss";
 import { useTranslation } from "react-i18next";
@@ -22,6 +21,29 @@ export default function OurSerVice() {
       title: t("sdm"),
       img: "../img/s5.png",
       link: "/ourservice?subpath=server",
+    },
+  ];
+
+  const swiper2 = [
+    {
+      img: "../img/w1.jpg",
+      title: t("web_hover"),
+      link: "/ourservice?subpath=website",
+    },
+    {
+      img: "../img/m1.jpg",
+      title: t("mobile_hover"),
+      link: "/ourservice?subpath=mobile",
+    },
+    {
+      img: "../img/e1.jpg",
+      title: t("ecom_hover"),
+      link: "/ourservice?subpath=e_commerce",
+    },
+    {
+      img: "../img/d1.jpg",
+      title: t("digital_hover"),
+      link: "/ourservice?subpath=digital",
     },
   ];
   return (

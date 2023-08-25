@@ -1,7 +1,9 @@
 import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+import { useTranslation } from "react-i18next";
 export default function WebSite() {
+  const { t } = useTranslation();
   return (
     <Box className="bg_image">
       <Container maxWidth="xl" sx={{ mt: { md: 8, xs: 7 }, pt: 8 }}>
@@ -24,7 +26,7 @@ export default function WebSite() {
                 src="../img/website1.jpg"
                 style={{
                   width: "330px",
-                  height: "480px",
+                  height: "100%",
                   borderRadius: "1rem",
                 }}
                 data-aos="fade-right"
@@ -76,29 +78,16 @@ export default function WebSite() {
                 sx={{
                   background: "rgba(11, 7, 22, 0.6)",
                   width: { xs: "380px", md: "400px" },
-                  // height: {
-                  //   xs: "500px",
-                  //   sm: "500px",
-                  //   md: "500px",
-                  //   lg: "480px",
-                  //   xl: "480px",
-                  // },
-                  height: "fit-content",
+                  height: "100%",
                   p: 2,
                   borderRadius: "1rem",
                 }}
               >
                 <Typography variant="h5" fontWeight={900} lineHeight={2}>
-                  คืออะไร
+                  {t("is_web")}
                 </Typography>
                 <Typography variant="h6" lineHeight={2.4}>
-                  Web Design คือ
-                  การออกแบบรูปลักษณ์ภายนอกของเว็บไซต์ที่ตาเรามองเห็น เช่น
-                  ความสวยงาม รวมถึงการออกแบบฟังก์ชันการทํางานต่าง ๆ
-                  โดยออกแบบจากมุมมองของผู้ใช้งานเป็นหลัก ซึ่งคน
-                  ที่ออกแบบเว็บไซต์ หรือที่เราเรียกกันว่า Web Designer
-                  มักใช้ซอฟต์แวร์ เช่น Figma หรือ Adobe XD ในการออกแบบ
-                  เพื่อสร้าง User Experience
+                  {t("is_web_1")}
                 </Typography>
               </Stack>
               <Box
@@ -147,22 +136,16 @@ export default function WebSite() {
                 sx={{
                   background: "rgba(11, 7, 22, 0.6)",
                   width: { xs: "380px", md: "400px" },
-                  height: "480px",
+                  height: "100%",
                   p: 2,
                   borderRadius: "1rem",
                 }}
               >
                 <Typography variant="h5" fontWeight={900} lineHeight={2}>
-                  ทำอะไรได้บ้าง
+                  {t("how_it_work")}
                 </Typography>
                 <Typography variant="h6" lineHeight={2.4}>
-                  เว็บไซต์ เป็นชุดหน้าเว็บ
-                  หรือเอกสารที่เข้าถึงได้ผ่านอินเทอร์เน็ต
-                  เราสามารถเข้าถึงหน้าเว็บไซต์ได้
-                  โดยใช้เบราว์เซอร์เพื่อซื้อสินค้า หรือบริการ
-                  ผู้เข้าชมอาจต้องการซื้อซอฟต์แวร์ที่ขายดี หรือล่าสุด,
-                  ดาวน์โหลดโปรแกรมซอฟต์แวร์
-                  และเข้าร่วมการสนทนาออนไลน์เกี่ยวกับงานอดิเรกที่ชื่นชอบ เป็นต้น
+                  {t("is_web_2")}
                 </Typography>
               </Stack>
             </Stack>
@@ -184,22 +167,16 @@ export default function WebSite() {
                 sx={{
                   background: "rgba(11, 7, 22, 0.6)",
                   width: { xs: "380px", md: "400px" },
-                  height: "480px",
+                  height: "100%",
                   p: 2,
                   borderRadius: "1rem",
                 }}
               >
                 <Typography variant="h5" fontWeight={900} lineHeight={2}>
-                  ทำอะไรได้บ้าง
+                  {t("how_it_work")}
                 </Typography>
                 <Typography variant="h6" lineHeight={2.4}>
-                  เว็บไซต์ เป็นชุดหน้าเว็บ
-                  หรือเอกสารที่เข้าถึงได้ผ่านอินเทอร์เน็ต
-                  เราสามารถเข้าถึงหน้าเว็บไซต์ได้
-                  โดยใช้เบราว์เซอร์เพื่อซื้อสินค้า หรือบริการ
-                  ผู้เข้าชมอาจต้องการซื้อซอฟต์แวร์ที่ขายดี หรือล่าสุด,
-                  ดาวน์โหลดโปรแกรมซอฟต์แวร์
-                  และเข้าร่วมการสนทนาออนไลน์เกี่ยวกับงานอดิเรกที่ชื่นชอบ เป็นต้น
+                  {t("is_web_2")}
                 </Typography>
               </Stack>
             </Stack>

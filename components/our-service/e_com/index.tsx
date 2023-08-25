@@ -1,7 +1,9 @@
 import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+import { useTranslation } from "react-i18next";
 export default function ECommerce() {
+  const { t } = useTranslation();
   return (
     <Box className="bg_image">
       <Container maxWidth="xl" sx={{ mt: { md: 8, xs: 7 }, pt: 8 }}>
@@ -24,7 +26,7 @@ export default function ECommerce() {
                 src="../img/ecom.jpg"
                 style={{
                   width: "330px",
-                  height: "480px",
+                  height: "100%",
                   borderRadius: "1rem",
                 }}
                 data-aos="fade-right"
@@ -76,21 +78,16 @@ export default function ECommerce() {
                 sx={{
                   background: "rgba(11, 7, 22, 0.6)",
                   width: { xs: "380px", md: "400px" },
-                  height: "fit-content",
+                  height: "100%",
                   p: 2,
                   borderRadius: "1rem",
                 }}
               >
                 <Typography variant="h5" fontWeight={900} lineHeight={2}>
-                  คืออะไร
+                  {t("what_ecom")}
                 </Typography>
                 <Typography variant="h6" lineHeight={2.5}>
-                  การทําธุรกรรมผ่านสื่ออิเล็กทรอนิกส์ในทุกช่องทางที่เป็นอิเล็กทรอนิกส์
-                  ได้แก่ อินเทอร์เน็ต และระบบเครือข่ายคอมพิวเตอร์
-                  การพาณิชย์อิเล็กทรอนิกส์สามารถกระทําผ่านโทรศัพท์เคลื่อนที่
-                  การโอนเงินอิเล็กทรอนิกส์ การจัดการห่วงโซ่อุปทาน
-                  การโฆษณาในอินเทอร์เน็ต แม้กระทั่งซื้อขาย ออนไลน์
-                  โดยมีวัตถุประสงค์เพื่อลดค่าใช้จ่ายและเพิ่มประสิทธิภาพขององค์กร
+                  {t("is_ecom")}
                 </Typography>
               </Stack>
               <Box
@@ -142,22 +139,23 @@ export default function ECommerce() {
                 sx={{
                   background: "rgba(11, 7, 22, 0.6)",
                   width: { xs: "380px", md: "400px" },
-                  height: "480px",
+                  height: "100%",
                   p: 2,
                   borderRadius: "1rem",
                 }}
               >
                 <Typography variant="h5" fontWeight={900} lineHeight={2}>
-                  ทำอะไรได้บ้าง
+                  {t("how_it_work")}
                 </Typography>
                 <Typography variant="h6" lineHeight={2.5}>
-                  เทคโนโลยีสารสนเทศที่รุดหน้า ทั้งระบบโทรคมนาคม ระบบคอมพิวเตอร์
-                  และอินเทอร์เน็ต ทําให้การสื่อสารกันเป็นไปได้โดยง่าย
-                  และสามารถเข้าถึงผู้ใช้บริการได้หลายระดับ อีกทั้งยังสามารถ
-                  โต้ตอบกันได้ทันที ทําให้สามารถเสนอธุรกรรมที่หลากหลาย เช่น
-                  <br />
-                  การชื้อขาย การบริการหลังการขาย การโอนเงินชําระค่าบริการสินค้า
-                  การขนส่ง เป็นต้น
+                  {/* เทคโนโลยีสารสนเทศที่รุดหน้า ทั้งระบบโทรคมนาคม ระบบคอมพิวเตอร์
+                และอินเทอร์เน็ต ทําให้การสื่อสารกันเป็นไปได้โดยง่าย
+                และสามารถเข้าถึงผู้ใช้บริการได้หลายระดับ อีกทั้งยังสามารถ
+                โต้ตอบกันได้ทันที ทําให้สามารถเสนอธุรกรรมที่หลากหลาย เช่น
+                <br />
+                การชื้อขาย การบริการหลังการขาย การโอนเงินชําระค่าบริการสินค้า
+                การขนส่ง เป็นต้น */}
+                  {t("is_ecom_1")}
                 </Typography>
               </Stack>
             </Stack>
@@ -180,29 +178,30 @@ export default function ECommerce() {
                 sx={{
                   background: "rgba(11, 7, 22, 0.6)",
                   width: { xs: "380px", md: "400px" },
-                  height: { xs: "480px", sm: "510px", lg: "480px" },
+                  height: "100%",
                   p: 2,
                   borderRadius: "1rem",
                 }}
               >
                 <Typography variant="h5" fontWeight={900} lineHeight={2}>
-                  ทำอะไรได้บ้าง
+                  {t("how_it_work")}
                 </Typography>
                 <Typography variant="h6" lineHeight={2.5}>
-                  เทคโนโลยีสารสนเทศที่รุดหน้า ทั้งระบบโทรคมนาคม ระบบคอมพิวเตอร์
-                  และอินเทอร์เน็ต ทําให้การสื่อสารกันเป็นไปได้โดยง่าย
-                  และสามารถเข้าถึงผู้ใช้บริการได้หลายระดับ อีกทั้งยังสามารถ
-                  โต้ตอบกันได้ทันที ทําให้สามารถเสนอธุรกรรมที่หลากหลาย เช่น
-                  <br />
-                  การชื้อขาย การบริการหลังการขาย การโอนเงินชําระค่าบริการสินค้า
-                  การขนส่ง เป็นต้น
+                  {/* เทคโนโลยีสารสนเทศที่รุดหน้า ทั้งระบบโทรคมนาคม ระบบคอมพิวเตอร์
+                และอินเทอร์เน็ต ทําให้การสื่อสารกันเป็นไปได้โดยง่าย
+                และสามารถเข้าถึงผู้ใช้บริการได้หลายระดับ อีกทั้งยังสามารถ
+                โต้ตอบกันได้ทันที ทําให้สามารถเสนอธุรกรรมที่หลากหลาย เช่น
+                <br />
+                การชื้อขาย การบริการหลังการขาย การโอนเงินชําระค่าบริการสินค้า
+                การขนส่ง เป็นต้น */}
+                  {t("is_ecom_1")}
                 </Typography>
               </Stack>
             </Stack>
           </Grid>
         </Grid>
       </Container>
-      <Box height={105} />
+      <Box height={76} />
     </Box>
   );
 }
