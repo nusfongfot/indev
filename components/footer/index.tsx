@@ -12,10 +12,12 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 const icons = [
   {
+    title: "Facebook",
     img: "../img/fb.jpg",
     link: "https://www.facebook.com/profile.php?id=100095225520798",
   },
   {
+    title: "Tiktok",
     img: "../img/tk.jpg",
     link: "https://www.tiktok.com/@dev.in.dream?lang=th-TH",
   },
@@ -42,15 +44,17 @@ export default function Footer() {
             <Stack
               flexDirection={"column"}
               alignItems={"center"}
-              justifyContent={"space-between"}
-              sx={{ height: "198px" }}
+              justifyContent={"space-around"}
+              height={"100%"}
             >
-              <Link href={"/"}>
-                <img
-                  src="../img/logo.png"
-                  style={{ width: 200, height: 72, objectFit: "cover" }}
-                />
-              </Link>
+              <Box>
+                <Link href={"/"}>
+                  <img
+                    src="../img/logo.png"
+                    style={{ width: 200, height: 72, objectFit: "cover" }}
+                  />
+                </Link>
+              </Box>
 
               {ourService.map((item, i) => (
                 <Link
@@ -96,23 +100,28 @@ export default function Footer() {
               <Typography className="title2 color_purple">
                 Contact Us
               </Typography>
-              <Stack flexDirection={"row"} alignItems={"center"} mt={2} gap={1}>
+              <Stack flexDirection={"row"} alignItems={"center"} gap={1}>
                 <LocalPhoneIcon />
                 <Typography>065-454-2888</Typography>
               </Stack>
 
-              <Stack flexDirection={"row"} gap={1} mt={2}>
+              <Stack gap={1} mt={1}>
                 {icons.map((item, i) => (
                   <Link href={item.link} key={i} target="_blank">
-                    <img
-                      src={item.img}
-                      style={{ width: 30, height: 30, borderRadius: "50%" }}
-                    />
+                    <Stack
+                      flexDirection={"column"}
+                      justifyContent={"center"}
+                      alignItems={"center"}
+                    >
+                      <img
+                        src={item.img}
+                        style={{ width: 40, height: 40, borderRadius: "50%" }}
+                      />
+                      <Typography>{item.title}</Typography>
+                    </Stack>
                   </Link>
                 ))}
               </Stack>
-
-              <Box mt={7} />
             </Stack>
 
             <Divider
@@ -126,17 +135,20 @@ export default function Footer() {
           </Stack>
         </Grid>
         <Grid item xs={12} md={4}>
-          <Stack flexDirection={"column"} alignItems={"center"}>
+          <Stack
+            flexDirection={"column"}
+            alignItems={"center"}
+            height={"100%"}
+            justifyContent={"space-between"}
+          >
             <Typography className="title2 color_purple">Address</Typography>
-            <Typography mt={1}>บริษัท อิน เดฟ แอดไวเซอรี่ จำกัด</Typography>
-            <Typography mt={1}>(สำนักงานใหญ่)</Typography>
-            <Typography mt={1}>127 ถนนวิภาวดีรังสิต แขวงสามเสนใน</Typography>
-            <Typography mt={1}>เขตพญาไท กรุงเทพมหานคร 10400</Typography>
+            <Typography>บริษัท อิน เดฟ แอดไวเซอรี่ จำกัด</Typography>
+            <Typography>(สำนักงานใหญ่)</Typography>
+            <Typography>127 ถนนวิภาวดีรังสิต แขวงสามเสนใน</Typography>
+            <Typography>เขตพญาไท กรุงเทพมหานคร 10400</Typography>
           </Stack>
           <Stack flexDirection={"column"} alignItems={"flex-end"}>
-            <Typography mt={1} sx={{ fontSize: 10 }}>
-              &#174; DEV IN DREAM
-            </Typography>
+            <Typography sx={{ fontSize: 10 }}>&#174; DEV IN DREAM</Typography>
           </Stack>
         </Grid>
       </Grid>
